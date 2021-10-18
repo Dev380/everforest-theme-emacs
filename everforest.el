@@ -1,18 +1,16 @@
-;;; everforest-dark-theme.el --- A retro-groove colour theme for Emacs -*- lexical-binding: t -*-
+;;;; everforest.el --- A green-based, warm theme for Emacs -*- lexical-binding: t -*-
 
 ;; Copyright (c) 2013 Lee Machin
 ;; Copyright (c) 2013-2016 Eduardo Lavaque
 ;; Copyright (c) 2016-2017 Jason Milkins
-;; Copyright (c) 2017 Martijn Terpstra
+;; Copyright (c) 2017-2018 Martijn Terpstra
+;; Copyright (c) 2021 Andrew Burch
 
-;; Author: Jason Milkins <jasonm23@gmail.com>
+;; Author: Andrew Burch <andrewwburch@gmail.com>
 ;; (current maintainer)
 ;;
-;; Author-list: Lee Machin <ljmachin@gmail.com>,
-;;              Eduardo Lavaque <me@greduan.com>
-;;
-;; URL: http://github.com/greduan/emacs-theme-everforest
-;; Version: 1.26.0
+;; URL: http://github.com/ablatedsprocket/emacs-theme-everforest
+;; Version: 1.0.0
 
 ;; Package-Requires: ((autothemer "0.2"))
 
@@ -20,34 +18,16 @@
 
 ;; Using autothemer since 1.00
 
-;; A port of the Everforest colorscheme for Vim, built on top of the new built-in
-;; theme support in Emacs 24.
+;; A port of the Everforest colorscheme for Vim.
 ;;
-;; This theme contains my own modifications and it's a bit opinionated
-;; sometimes, deviating from the original because of it. I try to stay
-;; true to the original as much as possible, however. I only make
-;; changes where I would have made the changes on the original.
-;;
-;; Since there is no direct equivalent in syntax highlighting from Vim to Emacs
-;; some stuff may look different, especially in stuff like JS2-mode, where it
-;; adds stuff that Vim doesn't have, in terms of syntax.
 
 ;;; Credits:
 
-;; Pavel Pertsev created the original theme for Vim, on which this port
+;; sainnhe created the original theme for Vim, on which this port
 ;; is based.
 
-;; Lee Machin created the first port of the original theme, which
+;; Lee Machin created the codebase this theme was adapted to.
 ;; Greduan developed further adding support for several major modes.
-;;
-;; Jason Milkins (ocodo) has maintained the theme since 2015 and is
-;; working with the community to add further mode support and align
-;; the project more closely with Vim Everforest.
-;;
-;; Martijn Terpstra has been a major contributor since mid 2017 and
-;; helped to re-implement Everforest with autothemer so we can have
-;; multiple variants of Everforest (as we do on Vim).  Martijn has also
-;; provided a large number mode support enhancements.
 
 ;;; Code:
 (eval-when-compile

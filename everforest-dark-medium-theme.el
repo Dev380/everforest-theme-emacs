@@ -1,4 +1,4 @@
-;;; everforest-theme.el --- A retro-groove colour theme for Emacs -*- lexical-binding: t -*-
+;;; everforest-dark-medium-theme.el --- A retro-groove colour theme for Emacs -*- lexical-binding: t -*-
 
 ;; Copyright (c) 2013 Lee Machin
 ;; Copyright (c) 2013-2016 Eduardo Lavaque
@@ -51,8 +51,8 @@
 (require 'everforest)
 
 (everforest-deftheme
- everforest
- "A retro-groove colour theme"
+ everforest-dark-medium
+ "A retro-groove colour theme (dark version, medium contrast)"
 
  ((((class color) (min-colors #xFFFFFF))        ; col 1 GUI/24bit
    ((class color) (min-colors #xFF)))           ; col 2 Xterm/256
@@ -126,18 +126,19 @@
   (everforest-bg everforest-dark0)
   (everforest-bg_inactive everforest-dark0_soft)
   )
+ 
 
- (custom-theme-set-variables 'everforest
+ (custom-theme-set-variables 'everforest-dark-medium
                              `(ansi-color-names-vector
                                [,everforest-dark1
-                                ,everforest-neutral_red
-                                ,everforest-neutral_green
-                                ,everforest-neutral_yellow
-                                ,everforest-neutral_blue
-                                ,everforest-neutral_purple
-                                ,everforest-neutral_aqua
-                                ,everforest-light1])))
-
+                                ,everforest-bright_red
+                                ,everforest-bright_green
+                                ,everforest-bright_yellow
+                                ,everforest-bright_blue
+                                ,everforest-bright_purple
+                                ,everforest-bright_aqua
+                                ,everforest-light1])
+			     `(pdf-view-midnight-colors '(,everforest-light0 . ,everforest-bg))))
 
 ;;;###autoload
 (and load-file-name
@@ -146,11 +147,10 @@
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
 
-(provide-theme 'everforest)
-
+(provide-theme 'everforest-dark-medium)
 
 ;; Local Variables:
 ;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
 ;; End:
 
-;;; everforest-theme.el ends here
+;;; everforest-dark-medium-theme.el ends here
