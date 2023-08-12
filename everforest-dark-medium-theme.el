@@ -67,8 +67,8 @@
 
   (everforest-gray            "#7a8478" "#8a8a8a")
 
-  (everforest-light0_hard     "#f8f0dc" "#ffffd7")
-  (everforest-light0          "#f8f0dc" "#ffffaf")
+  (everforest-light0_hard     "#efead4" "#ffdfaf")
+  (everforest-light0          "#efead4" "#ffdfaf")
   (everforest-light1          "#efead4" "#ffdfaf")
   (everforest-light2          "#e9e5cf" "#bcbcbc")
   (everforest-light3          "#e1ddc9" "#a8a8a8")
