@@ -138,7 +138,7 @@
                                 ,everforest-bright_purple
                                 ,everforest-bright_aqua
                                 ,everforest-light1])
-			     `(pdf-view-midnight-colors '(,everforest-light0 . ,everforest-bg))))
+			     `(pdf-view-midnight-colors '(,everforest-light1 . ,everforest-bg))))
 
 ;;;###autoload
 (and load-file-name
