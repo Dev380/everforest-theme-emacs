@@ -297,7 +297,7 @@
      (marginalia-documentation                  (:italic t :foreground everforest-light3))
      
      ;; corfu
-     (corfu-background                          (:background everforest-dark1))
+     (corfu-default                             (:background everforest-dark1))
      (corfu-current                             (:foreground everforest-bright_purple :background everforest-dark2))
      (corfu-bar                                 (:background everforest-dark2))
      (corfu-border                              (:background everforest-dark1))
